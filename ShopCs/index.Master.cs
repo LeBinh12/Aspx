@@ -22,7 +22,7 @@ namespace ShopCs
                         "\r\n                    </a>";
                 } else
                 {
-                    LoadAdmin.Text = "                    <a style=\"    text-decoration: none;\" href=\"Login.aspx\" class=\"icons-btn d-inline-block\" title=\"Đăng Nhập\">\r\n" +
+                    LoadAdmin.Text = "                    <a style=\"    text-decoration: none;\" href=\"View/Pages/Login.aspx\" class=\"icons-btn d-inline-block\" title=\"Đăng Nhập\">\r\n" +
                         "                        <i class=\"fa-solid fa-user\"></i>\r\n" +
                         "                    </a>";
                 }
@@ -55,7 +55,7 @@ namespace ShopCs
                    $"    <h7>{products.ProductName}</h7>\r\n" +
                    $"    <p class=\"price\">{products.Price} đ</p>\r\n" +
                    $"    <p>Some text about the product...</p>\r\n" +
-                   $"<form action=\"ProductDetail.aspx\" method=\"post\">" +
+                   $"<form action=\"View/Pages/ProductDetail.aspx\" method=\"post\">" +
                    $"    <input type=\"hidden\" name=\"id\" value=\"{products.ProductID}\">\r\n" +  // Hidden input chứa ID sản phẩm
                    $"    <p><button type=\"submit\" name=\"Details\">Xem Chi Tiết</button></p>\r\n</form>" +  // Nút submit
                    $"</div>";

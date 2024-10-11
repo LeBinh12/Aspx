@@ -26,7 +26,7 @@ namespace ShopCs
             if (json != null)
             {
                 Session["username"] = json.FullName;
-                Response.Redirect("index.aspx");
+                Response.Redirect("../../index.aspx");
             }
             else
             {

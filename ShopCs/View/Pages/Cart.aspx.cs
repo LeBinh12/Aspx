@@ -27,7 +27,7 @@ namespace ShopCs
             var list = "";
             foreach (var category in categories)
             {
-                list += $"<li><a><i><img src=\"Image/Logo/{category.logo}\" alt=\"\"/></i><span>{category.CategoryName}</span></a></li>";
+                list += $"<li><a><i><img src=\".. / .. / Image /{category.logo}\" alt=\"\"/></i><span>{category.CategoryName}</span></a></li>";
             }
             dataCategories.Text = list.ToString();
         }
